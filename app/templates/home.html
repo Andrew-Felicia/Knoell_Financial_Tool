@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Excel Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-12 col-lg-8">
+    <h1 class="h3 mb-3">Excel Analyzer</h1>
+
+    <div class="list-group">
+      <a href="{{ url_for('tables.index') }}" class="list-group-item list-group-item-action">
+        Manage tables
+      </a>
+      <a href="{{ url_for('excel.index') }}" class="list-group-item list-group-item-action">
+        Import or export Excel files
+      </a>
+      <a href="{{ url_for('auth.login') }}" class="list-group-item list-group-item-action">
+        Log in
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

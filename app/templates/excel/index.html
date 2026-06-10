@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Excel Import - Excel Analyzer{% endblock %}
+
+{% block content %}
+<h1 class="h4 mb-3">Excel Files</h1>
+
+<form method="post" enctype="multipart/form-data" class="mb-4">
+  <div class="mb-3">
+    <label for="excel_file" class="form-label">Choose Excel file</label>
+    <input id="excel_file" name="excel_file" type="file" class="form-control" accept=".xlsx,.xls">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<div class="card">
+  <div class="card-body">
+    <p class="text-muted mb-0">Uploaded files will be imported into database tables.</p>
+  </div>
+</div>
+{% endblock %}
