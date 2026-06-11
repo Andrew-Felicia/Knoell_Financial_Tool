@@ -1,4 +1,4 @@
-#DO NOT add this to git.
+
 
 import os
 from dotenv import load_dotenv

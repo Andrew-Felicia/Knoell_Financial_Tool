@@ -1,4 +1,6 @@
-Always activate the venv before working. You'll see `(venv)` in your terminal prompt when it's active.
+how to Run this project:
+
+1.Always activate the venv before working. You'll see `(venv)` in your terminal prompt when it's active.
 Activate (Windows):
 venv\Scripts\activate
 
@@ -14,5 +16,5 @@ flask --app wsgi db upgrade
 #altenative
 python -m flask --app wsgi:app db upgrade
 
-Then start the server:
+2.Then start the server:
 flask --app wsgi run --debug
